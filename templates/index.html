@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>
+		sec580.cn
+	</title>
+</head>
+<body>
+    <h1>sec580.cn</h1>
+    <hr>
+    {% for post in posts %}
+        <p style="font-family: 微软雅黑;font-size: 14pt;font-weight: bold;">
+        	<a href="/post/{{post.slug}}">{{ post.title }}</a>
+        </p>
+    {% endfor %}
+    <hr>
+    <h3>现在时刻：{{now}}</h3>
+</body>
+</html>
