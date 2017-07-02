@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} {{ post.title }} - 文学天地 {% endblock %}
+{% block headmessage %}
+	<h3 style="font-family: 微软雅黑">{{ post.title }}</h3>
+	<a style="font-family: 微软雅黑" href="/">回首页</a>
+{% endblock %}
+{% block content %}
+	<p style="font-family: 微软雅黑;font-size: 12pt;letter-spacing: 2pt;">
+		{{  post.body }}
+	</p>
+{% endblock %}
